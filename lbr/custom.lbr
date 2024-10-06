@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -78,10 +78,10 @@
 <smd name="2" x="1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
 <text x="-2.27" y="0.8" size="0.9" layer="25" font="vector">&gt;NAME</text>
 <text x="-2.3" y="-1.6" size="0.9" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="-2.9" y1="1.9" x2="2.9" y2="1.9" width="0.0762" layer="39"/>
-<wire x1="2.9" y1="1.9" x2="2.9" y2="-1.9" width="0.0762" layer="39"/>
-<wire x1="2.9" y1="-1.9" x2="-2.9" y2="-1.9" width="0.0762" layer="39"/>
-<wire x1="-2.9" y1="-1.9" x2="-2.9" y2="1.9" width="0.0762" layer="39"/>
+<wire x1="-2.4" y1="1.4" x2="2.4" y2="1.4" width="0.0762" layer="39"/>
+<wire x1="2.4" y1="1.4" x2="2.4" y2="-1.4" width="0.0762" layer="39"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.0762" layer="39"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.4" width="0.0762" layer="39"/>
 <wire x1="-1.4" y1="0.6" x2="1.4" y2="0.6" width="0.127" layer="21"/>
 <wire x1="1.4" y1="0.6" x2="1.4" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="1.4" y1="-0.6" x2="-1.4" y2="-0.6" width="0.127" layer="21"/>
@@ -101,10 +101,10 @@
 <wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.12" layer="51"/>
 <text x="0" y="1" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1" size="0.9" layer="27" font="vector" align="top-center">&gt;VALUE</text>
-<wire x1="-2.9" y1="1.9" x2="2.9" y2="1.9" width="0.127" layer="39"/>
-<wire x1="2.9" y1="1.9" x2="2.9" y2="-1.9" width="0.127" layer="39"/>
-<wire x1="2.9" y1="-1.9" x2="-2.9" y2="-1.9" width="0.127" layer="39"/>
-<wire x1="-2.9" y1="-1.9" x2="-2.9" y2="1.9" width="0.127" layer="39"/>
+<wire x1="-2.4" y1="1.4" x2="2.4" y2="1.4" width="0.127" layer="39"/>
+<wire x1="2.4" y1="1.4" x2="2.4" y2="-1.4" width="0.127" layer="39"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.127" layer="39"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.4" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
