@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -210,33 +210,32 @@
 <wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.127" layer="39"/>
 <wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.4" width="0.127" layer="39"/>
 <polygon width="0.1524" layer="21" pour="solid">
-<vertex x="-2.2238" y="0.1476"/>
-<vertex x="-2.2238" y="-0.1476"/>
-<vertex x="-2.027" y="0"/>
+<vertex x="2.027" y="0"/>
+<vertex x="2.2238" y="-0.1476"/>
+<vertex x="2.2238" y="0.1476"/>
 </polygon>
 </package>
 <package name="MOSFET">
 <description>3-SOT23, 0.95 mm pitch, 2.40 mm span, 2.90 X 1.30 X 1.10 mm body
  &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.40 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
-<smd name="G" x="-1.0247" y="0.95" dx="1.5" dy="1" layer="1" stop="no" cream="no"/>
-<smd name="S" x="-1.0247" y="-0.95" dx="1.5" dy="1" layer="1" stop="no" cream="no"/>
-<smd name="D" x="1.0247" y="0" dx="2.05" dy="2.9" layer="1" stop="no" cream="no"/>
-<circle x="-1.154" y="1.7601" radius="0.25" width="0" layer="21"/>
-<wire x1="-0.65" y1="1.5701" x2="0.65" y2="1.5701" width="0.12" layer="21"/>
-<wire x1="0.65" y1="1.5701" x2="0.65" y2="0.5601" width="0.12" layer="21"/>
-<wire x1="-0.65" y1="-1.5701" x2="0.65" y2="-1.5701" width="0.12" layer="21"/>
-<wire x1="0.65" y1="-1.5701" x2="0.65" y2="-0.5601" width="0.12" layer="21"/>
-<wire x1="-0.7" y1="-1.5" x2="-0.7" y2="1.5" width="0.12" layer="51"/>
-<wire x1="-0.7" y1="1.5" x2="0.7" y2="1.5" width="0.12" layer="51"/>
-<wire x1="0.7" y1="1.5" x2="0.7" y2="-1.5" width="0.12" layer="51"/>
-<wire x1="0.7" y1="-1.5" x2="-0.7" y2="-1.5" width="0.12" layer="51"/>
+<smd name="G" x="-0.95" y="-1" dx="1.5" dy="1" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="S" x="0.95" y="-1" dx="1.5" dy="1" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="D" x="0" y="1.025" dx="2.05" dy="2.9" layer="1" rot="R90" stop="no" cream="no"/>
+<wire x1="-1.5701" y1="-0.65" x2="-1.5701" y2="0.65" width="0.12" layer="21"/>
+<wire x1="-1.5701" y1="0.65" x2="-0.5601" y2="0.65" width="0.12" layer="21"/>
+<wire x1="1.5701" y1="-0.65" x2="1.5701" y2="0.65" width="0.12" layer="21"/>
+<wire x1="1.5701" y1="0.65" x2="0.5601" y2="0.65" width="0.12" layer="21"/>
+<wire x1="1.5" y1="-0.7" x2="-1.5" y2="-0.7" width="0.12" layer="51"/>
+<wire x1="-1.5" y1="-0.7" x2="-1.5" y2="0.7" width="0.12" layer="51"/>
+<wire x1="-1.5" y1="0.7" x2="1.5" y2="0.7" width="0.12" layer="51"/>
+<wire x1="1.5" y1="0.7" x2="1.5" y2="-0.7" width="0.12" layer="51"/>
 <text x="0" y="2.2451" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-1.387" y1="0.6705" x2="-0.6627" y2="1.2295" layer="31"/>
-<rectangle x1="0.663" y1="-0.2795" x2="1.387" y2="0.2795" layer="31"/>
-<rectangle x1="-1.387" y1="-1.2295" x2="-0.6627" y2="-0.6705" layer="31"/>
-<rectangle x1="-1.387" y1="0.6705" x2="-0.6627" y2="1.2295" layer="29"/>
-<rectangle x1="-1.387" y1="-1.2295" x2="-0.6627" y2="-0.6705" layer="29"/>
-<rectangle x1="0.663" y1="-0.2795" x2="1.387" y2="0.2795" layer="29"/>
+<rectangle x1="-1.31215" y1="-1.30435" x2="-0.58785" y2="-0.74535" layer="31" rot="R90"/>
+<rectangle x1="-0.362" y1="0.7455" x2="0.362" y2="1.3045" layer="31" rot="R90"/>
+<rectangle x1="0.58785" y1="-1.30435" x2="1.31215" y2="-0.74535" layer="31" rot="R90"/>
+<rectangle x1="-1.31215" y1="-1.30435" x2="-0.58785" y2="-0.74535" layer="29" rot="R90"/>
+<rectangle x1="0.58785" y1="-1.30435" x2="1.31215" y2="-0.74535" layer="29" rot="R90"/>
+<rectangle x1="-0.362" y1="0.7455" x2="0.362" y2="1.3045" layer="29" rot="R90"/>
 <wire x1="-2.4" y1="2.4" x2="2.4" y2="2.4" width="0.127" layer="39"/>
 <wire x1="2.4" y1="2.4" x2="2.4" y2="-2.4" width="0.127" layer="39"/>
 <wire x1="2.4" y1="-2.4" x2="-2.4" y2="-2.4" width="0.127" layer="39"/>
@@ -255,8 +254,6 @@
 <wire x1="-2.4" y1="1.9" x2="-2.4" y2="-1.9" width="0.127" layer="39"/>
 <wire x1="-2.4" y1="-1.9" x2="2.4" y2="-1.9" width="0.127" layer="39"/>
 <wire x1="2.4" y1="-1.9" x2="2.4" y2="1.9" width="0.127" layer="39"/>
-<rectangle x1="-3" y1="-2.5" x2="3" y2="3" layer="42"/>
-<rectangle x1="-3" y1="-2.5" x2="3" y2="3" layer="43"/>
 <smd name="10" x="1.212" y="0.25" dx="0.35" dy="0.575" layer="1" rot="R90"/>
 <smd name="9" x="1.212" y="-0.25" dx="0.35" dy="0.575" layer="1" rot="R90"/>
 <smd name="8" x="1.212" y="-0.75" dx="0.35" dy="0.575" layer="1" rot="R90"/>
@@ -270,10 +267,12 @@
 <smd name="2" x="-1.212" y="0.25" dx="0.35" dy="0.575" layer="1" rot="R90"/>
 <smd name="3" x="-1.212" y="-0.25" dx="0.35" dy="0.575" layer="1" rot="R90"/>
 <smd name="4" x="-1.212" y="-0.75" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<rectangle x1="-2.6" y1="-2" x2="2.5" y2="2.8" layer="42"/>
+<rectangle x1="-2.6" y1="-2" x2="2.5" y2="2.8" layer="43"/>
 </package>
 </packages>
 <symbols>
-<symbol name="0805_0OHM_RESISTOR">
+<symbol name="RESISTOR">
 <pin name="1" x="-10.16" y="0" length="middle"/>
 <pin name="2" x="10.16" y="0" length="middle" rot="R180"/>
 <text x="-6.35" y="2.54" size="2.54" layer="95">&gt;NAME</text>
@@ -287,7 +286,7 @@
 <wire x1="2.54" y1="-2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
 <wire x1="3.81" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
 </symbol>
-<symbol name="RED_LIGHT_LED">
+<symbol name="LED">
 <pin name="A" x="-10.16" y="0" length="middle"/>
 <pin name="C" x="10.16" y="0" length="middle" rot="R180"/>
 <wire x1="-5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
@@ -302,7 +301,7 @@
 <text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="MOSFET_SYMBOL">
+<symbol name="MOSFET">
 <pin name="S" x="0" y="-7.62" length="middle" rot="R90"/>
 <pin name="D" x="0" y="7.62" length="middle" rot="R270"/>
 <pin name="G" x="-7.62" y="-2.54" length="middle"/>
@@ -358,7 +357,7 @@
 <devicesets>
 <deviceset name="RESISTOR" prefix="R" uservalue="yes">
 <gates>
-<gate name="RESISTOR" symbol="0805_0OHM_RESISTOR" x="0" y="0"/>
+<gate name="RESISTOR" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-0805-OOHM" package="0805_0OHM_RESISTOR">
@@ -378,7 +377,7 @@
 </deviceset>
 <deviceset name="LED" prefix="D" uservalue="yes">
 <gates>
-<gate name="LED" symbol="RED_LIGHT_LED" x="0" y="0"/>
+<gate name="LED" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
 <device name="RED_LIGHT_LED" package="LEDC1507X80N">
@@ -398,7 +397,7 @@
 </deviceset>
 <deviceset name="FET" prefix="Q">
 <gates>
-<gate name="N-CHANNEL_MOSFET" symbol="MOSFET_SYMBOL" x="0" y="0"/>
+<gate name="N-CHANNEL_MOSFET" symbol="MOSFET" x="0" y="0"/>
 </gates>
 <devices>
 <device name="N-CHANNELMOSFET" package="MOSFET">
